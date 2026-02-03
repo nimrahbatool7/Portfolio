@@ -1,0 +1,70 @@
+#works
+{
+    min-height: calc(100vh - 4rem);
+    overflow: hidden;
+    width: 100vw;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 1rem ;
+}
+.workHeading
+{
+    margin: 2rem;
+    font-size: 3rem;
+}
+.worksPara
+{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    max-width: 50rem;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+.worksImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.workCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.worksimg {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.workDesc {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1%;
+  color: white;
+}
+
+.seeMore {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #008080; /* match your theme */
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.seeMore:hover {
+  background-color: #006666;
+}

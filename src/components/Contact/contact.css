@@ -1,0 +1,106 @@
+#contactPage 
+{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.contactPageTitle
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+.clientDesc
+{
+    font-size: 1.15rem;
+    font-weight: 200;
+    margin: 1rem;
+    /* letter-spacing: 1px;/ */
+}
+.clientImgaes
+{
+    margin: 1rem 0 ;
+    display: flex;
+}
+.clientImg{
+    object-fit: cover;
+    height: 5rem;
+    margin: 1rem;
+}
+.clients
+{
+    padding: 2rem;
+}
+
+.contact
+{
+    padding: 2rem;
+}
+.contactTitle
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+.contactDesc
+{
+    font-size: 1.15rem;
+    font-weight: 200;
+    margin: 1rem;
+}
+.contactForm
+{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+.name , .email , .msg
+{
+    width: 100%;
+    /* so that i coverds the whole form */
+    font-size: medium;
+    max-width: 40rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+.submitBtn
+{
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    margin: 1.5rem;
+    cursor: pointer;
+}
+.links
+{
+    width: 100vw;
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.linkImg{
+    object-fit: cover;
+    height: 3rem;
+    margin: 0 1rem;
+}

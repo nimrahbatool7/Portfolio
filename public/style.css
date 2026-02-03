@@ -1,0 +1,18 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: "Nunito", "sans-serif";
+}
+body
+{
+    background: rgb(30, 30, 30);
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}html {
+  scroll-padding-top: 6rem; /* height of your navbar (5rem) + a little extra */
+}

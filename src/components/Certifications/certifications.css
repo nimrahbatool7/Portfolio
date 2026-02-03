@@ -1,0 +1,32 @@
+.certSection {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #111; /* dark background */
+  color: white;
+}
+
+.certTitle {
+  font-size: 2.5rem;
+  color: yellow;
+  margin-bottom: 2rem;
+}
+
+.certContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.certItem {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.certItem:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}

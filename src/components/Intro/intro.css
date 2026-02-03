@@ -1,0 +1,117 @@
+#intro
+{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.bg
+{
+    position: absolute;
+    top: -1rem;
+    right: 5px;
+    z-index: -1;
+    object-fit: cover;
+    height: 85vh;
+    border-radius: 3rem;
+    margin-top: 2rem;
+     filter: blur(1px); /* Adds blur effect */
+    opacity: 0.75; /* Adjust transparency (0.5 = 50%) */
+}
+.introContent
+{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.hello
+{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.introName
+{
+    color: yellow;
+}
+.textDesc
+{
+    font-size: medium;
+    font-weight: 200;
+    /* letter-spacing: 1px; */
+}
+
+.btn
+{
+    background-color: white;
+    color: black;
+    margin: 1rem 0;
+    border-radius: 2.5rem;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    border: none;
+}
+.btnImg
+{
+    object-fit: cover;
+    margin: 0 1rem; 
+    height: 1rem;
+}
+@media screen and (max-width :840px)  {
+    .bg{
+        /* right: 10vw; */
+        width: 100%;
+    }
+    .introContent
+    {
+    font-size: 1rem;
+    font-weight: 300;
+    }
+    .hello,.introText
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-weight: bold;
+    } 
+    .textDesc
+    {
+        letter-spacing: 0px;
+    }
+
+
+}
+@media screen and (max-width :500px)  {
+    .bg{
+        right: -30vw;
+        width: 100%;
+    }
+    .hello,.introText
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-weight: bold;
+    }
+  
+}
+@media screen and (max-width :504px)  {
+    .bg {
+    height: 65vh;       /* Reduce height for mobile */
+    width: 100%;        /* Ensure full width (no horizontal overflow) */
+    left: 50%;          /* Start from 50% of parent */
+    transform: translateX(-50%); /* Center horizontally */
+    object-fit: cover;   /* Maintain aspect ratio */
+    object-position: center; /* Focus on the center of the image */
+    right: auto;        /* Override any conflicting right/left positioning */
+  }
+  
+}
