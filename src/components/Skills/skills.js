@@ -37,6 +37,17 @@ const Skills = () => {
                 </div>
 
                 <div className="skillBar">
+                <img src={AppDesign} alt="Mobile Development" className="skillsImg" />
+                 <div className="skillBarText">
+                    <h2>
+                        Mobile Development
+                    </h2>
+                    <p>Building cross-platform mobile apps with React Native, Flutter, Expo,
+            Firebase, and REST APIs.</p>
+                </div>
+                </div>
+
+                <div className="skillBar">
                 <img src={AppDesign} alt="AppDesign" className="skillsImg" />
                  <div className="skillBarText">
                     <h2>

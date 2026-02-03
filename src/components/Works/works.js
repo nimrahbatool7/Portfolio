@@ -14,19 +14,19 @@ import Portfolio11 from '../../assets/project_images/Portfolio11.png';
 import Portfolio12 from '../../assets/project_images/Portfolio12.png';
 
 const allProjects = [
-  { image: Portfolio1, desc: 'Netflix Clone' },
-  { image: Portfolio2, desc: 'Temple Website Contact Form' },
-  { image: Portfolio3, desc: 'Amazon Clone' },
-  { image: Portfolio4, desc: 'Space Shooter Game in python' },
-  { image: Portfolio5, desc: '2D Game in Unity' },
-  { image: Portfolio6, desc: 'AI Chat-Bot' },
+  { image: Portfolio1, desc: 'Netflix Clone', link: 'https://github.com/your-username/netflix-clone' },
+  { image: Portfolio2, desc: 'Temple Website Contact Form', link: 'https://github.com/your-username/temple-contact-form' },
+  { image: Portfolio3, desc: 'Amazon Clone', link: 'https://github.com/your-username/amazon-clone' },
+  { image: Portfolio4, desc: 'Space Shooter Game in python', link: 'https://github.com/your-username/space-shooter' },
+  { image: Portfolio5, desc: '2D Game in Unity', link: 'https://github.com/your-username/unity-2d-game' },
+  { image: Portfolio6, desc: 'AI Chat-Bot', link: 'https://github.com/your-username/ai-chat-bot' },
   // More projects (you can update images and descriptions later)
-  { image: Portfolio7, desc: 'WebCraft Solutions' },
-  { image: Portfolio8, desc: 'Mobile App' },
-  { image: Portfolio9, desc: 'Tic-Tac-Toe Game ' },
-  { image: Portfolio10, desc: ' Rock Paaper Scissors Game' },
-  { image: Portfolio11, desc: 'Weather App' },
-  { image: Portfolio12, desc: 'To-Do List App' }
+  { image: Portfolio7, desc: 'WebCraft Solutions', link: 'https://github.com/your-username/webcraft-solutions' },
+  { image: Portfolio8, desc: 'Mobile App', link: 'https://github.com/your-username/mobile-app' },
+  { image: Portfolio9, desc: 'Tic-Tac-Toe Game', link: 'https://github.com/your-username/tic-tac-toe' },
+  { image: Portfolio10, desc: 'Rock Paper Scissors Game', link: 'https://github.com/your-username/rock-paper-scissors' },
+  { image: Portfolio11, desc: 'Weather App', link: 'https://github.com/your-username/weather-app' },
+  { image: Portfolio12, desc: 'To-Do List App', link: 'https://github.com/your-username/todo-list' }
 ];
 
 const Works = () => {
@@ -43,10 +43,17 @@ const Works = () => {
 
       <div className="worksImages">
         {allProjects.slice(0, visibleCount).map((proj, index) => (
-          <div className="workCard" key={index}>
-            <img src={proj.image} alt={`Project ${index + 1}`} className="worksimg" />
+          <a
+            className="workCard"
+            key={index}
+            href={proj.link}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`${proj.desc} (opens in a new tab)`}
+          >
+            <img src={proj.image} alt={proj.desc} className="worksimg" />
             <p className="workDesc">{proj.desc}</p>
-          </div>
+          </a>
         ))}
       </div>
 

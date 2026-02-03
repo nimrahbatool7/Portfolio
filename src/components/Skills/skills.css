@@ -3,6 +3,8 @@
     overflow: hidden;
     width: 100vw;
     max-width: 65rem;
+    --accent: #00b3b3;
+    --card-bg: rgb(50, 50, 50);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -39,7 +41,15 @@
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    background: rgb(50,50 ,50);
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.skillBar:hover
+{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    border-color: rgba(0, 179, 179, 0.4);
 }
 .skillsImg
 {
